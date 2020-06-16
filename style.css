@@ -1,0 +1,38 @@
+.container{
+    margin-top: 50px;
+}
+body{
+    background-image: url(https://image.freepik.com/free-photo/3d-low-poly-abstract-background-with-connecting-lines-dots_1048-11673.jpg);
+    background-size: cover;
+    color:white;
+}
+.prof{
+    height: 225px;
+    width: 225px;
+    border-style: groove;
+    border-color: rgb(175, 142, 236);
+    border-width: 8px;
+}
+#box{
+    width:70%;
+    float:right;
+    padding-top: 35px;
+}
+.example{
+    margin:40px;
+}
+#dragon{
+    background-color:brown;
+    background-image: url(dragonhead.png);
+    background-size: contain;
+    background-position: center;
+    height: 300px;
+}
+.project{
+    background-color: rgba(33, 115, 170, 0.548);
+}
+.back{
+    background-color:rgb(1, 19, 46);
+    color:white;
+    font-weight: 600;
+}
