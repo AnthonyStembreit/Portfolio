@@ -23,9 +23,20 @@ body{
 }
 #dragon{
     background-color:brown;
-    background-image: url(dragonhead.png);
+    background-image: url(./dragonhead.png);
     background-size: contain;
     background-position: center;
+    height: 300px;
+}
+#flower{
+    background-image: url(./purple.jpg);
+    background-size: contain;
+    background-position: center;
+    height: 300px;
+}
+#band{
+    background-image: url(./BvbLogo.jpg);
+    background-size: contain;
     height: 300px;
 }
 .project{
