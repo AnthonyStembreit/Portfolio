@@ -1,11 +1,15 @@
 .container{
     margin-top: 50px;
 }
+.nav-link:hover{
+    background-color: grey;
+}
 body{
     background-image: url(https://image.freepik.com/free-photo/3d-low-poly-abstract-background-with-connecting-lines-dots_1048-11673.jpg);
     background-size: cover;
     color:white;
 }
+/*index page*/
 .prof{
     height: 225px;
     width: 225px;
@@ -19,6 +23,7 @@ body{
 .example{
     margin:40px;
 }
+/*projects page*/
 #dragon{
     background-color:brown;
     background-image: url(./dragonhead.png);
@@ -45,9 +50,28 @@ body{
     color:white;
     font-weight: 600;
 }
+/*footer*/
 i{
     color:white;
     background-color:rgb(1, 19, 46);
     font-size: 40px;
     padding:5px;
+}
+@media screen and (max-width: 768px){
+    header{
+        height:200px;
+    }
+    #dragon{
+        width:100%;
+    }
+    #flower{
+        width:100%;
+    }
+    #band{
+        width:100%;
+    }
+    .text{
+        font-size:48px;
+    }
+
 }
