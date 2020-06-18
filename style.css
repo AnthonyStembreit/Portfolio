@@ -13,9 +13,7 @@ body{
     border-color: rgb(175, 142, 236);
     border-width: 8px;
 }
-#box{
-    width:70%;
-    float:right;
+.text{
     padding-top: 35px;
 }
 .example{
