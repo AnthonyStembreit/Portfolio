@@ -45,3 +45,9 @@ body{
     color:white;
     font-weight: 600;
 }
+i{
+    color:white;
+    background-color:rgb(1, 19, 46);
+    font-size: 40px;
+    padding:5px;
+}

@@ -8,8 +8,10 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-        <!--personal css-->
-        <link rel="stylesheet" href="style.css">
+        <!--font awesome icons-->
+        <script src="https://kit.fontawesome.com/80d519acd1.js" crossorigin="anonymous"></script>
+         <!--personal css-->
+         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header>
@@ -33,13 +35,13 @@
                 </div>
               </nav>
         </header>
-
+        <!--contact form-->
         <div class="container">
             <div class="row">
               <div class="col-lg">
               </div>
               <div class="col-lg-9 col-sm-12">
-                <form meathod="post" action="mailto:stembreit@gmail.com">
+                <form  meathod="post" action="mailto:stembreit@gmail.com">
                     <div class="form-group">
                         <label for="col">Name</label>
                         <input type="text" class="form-control" placeholder="Name">
@@ -52,36 +54,41 @@
                       <label for="exampleFormControlTextarea1">Message</label>
                       <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn back">Submit</button>
                   </form>
               </div>
               <div class="col-lg">
               </div>
             </div>
           </div>
-          
-          <nav class=" fixed-bottom">
-            <div class="container">
-              <div class="row">
-                <div class="col"></div>
-                <div class="col-lg-1 col-sm-2">
-            <a class="navbar-brand" href="#">
-              <i class="fab fa-linkedin"></i>
-              </a>
-              </div>
-              <div class="col-lg-1 col-sm-2">
-              <a class="navbar-brand" href="#">
-                <i class="fab fa-github-square"></i>
-              </a>
-              </div>
-              <div class="col-lg-1 col-sm-2">
-              <a class="navbar-brand" href="#">
-                <i class="fab fa-facebook"></i>
-              </a>
-              </div>
+         <!--social media links-->
+         <nav class="fixed-bottom">
+          <div class="container">
+            <div class="row">
+
               <div class="col"></div>
+
+              <div class="col-lg-1 col-sm-2">
+                <a class="navbar-brand" target="_blank" href="https://www.linkedin.com/in/anthony-stematz-breitling-6499231a8/">
+                <i class="fab fa-linkedin"></i>
+                </a>
               </div>
+
+              <div class="col-lg-1 col-sm-2">
+                <a class="navbar-brand" target="_blank" href="https://github.com/AnthonyStematz-Breitling">
+                <i class="fab fa-github-square"></i>
+                </a>
+              </div>
+
+              <div class="col-lg-1 col-sm-2">
+                <a class="navbar-brand" href="#">
+                <i class="fas fa-envelope"></i>
+                </a>
+              </div>
+
+              <div class="col"></div>
             </div>
-          </nav>
+          </div>
+        </nav>
     </body>
 </html>
