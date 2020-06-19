@@ -58,6 +58,13 @@ i{
     font-size: 40px;
     padding:5px;
 }
+footer{
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1030;
+}
 @media screen and (max-width: 768px){
     .back{
         float:right;
@@ -68,5 +75,11 @@ i{
    .prof{
        height:300px;
        width:300px;
+   }
+   .bottom{
+       width:20%;
+   }
+   footer{
+       position:static;
    }
 }
