@@ -9,12 +9,18 @@ body{
     background-size: cover;
     color:white;
 }
+h1{
+    font-size:65px;
+    border-bottom-style: solid;
+    border-bottom-color:rgb(19, 52, 102);
+    border-bottom-width:5px;
+}
 /*index page*/
 .prof{
     height: 225px;
     width: 225px;
     border-style: groove;
-    border-color: rgb(175, 142, 236);
+    border-color: rgb(19, 52, 102);
     border-width: 8px;
 }
 .text{
@@ -54,7 +60,7 @@ body{
 /*footer*/
 i{
     color:white;
-    background-color:rgb(1, 19, 46);
+    background-color:rgb(19, 52, 102);
     font-size: 40px;
     padding:5px;
 }
@@ -65,6 +71,9 @@ footer{
         left: 0;
 }
 @media screen and (max-width: 768px){
+    h1{
+        text-align: center;
+    }
     .back{
         float:right;
     }
