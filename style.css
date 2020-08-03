@@ -65,10 +65,14 @@ i{
     padding:5px;
 }
 footer{
+        background-color:rgb(19, 52, 102);
         position: fixed;
         right: 0;
         bottom: 0;
         left: 0;
+}
+#icons{
+    margin-top:0px;
 }
 @media screen and (max-width: 768px){
     h1{
