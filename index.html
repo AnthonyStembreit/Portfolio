@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Portfolio Home</title>
+    <title>Portfolio</title>
     <!---css bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <!--javascript bootstrap-->
@@ -18,20 +18,20 @@
 
         <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="./index.html">Anthony Stematz-Breitling</a>
+                <a class="navbar-brand" id="name" href="./index.html">Anthony Stematz-Breitling</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                   <ul class="navbar-nav">
                     <li class="nav-item active">
-                      <a class="nav-link" href="index.html">About</a>
+                      <a class="nav-link" href="#bio-link">About</a>
                     </li>
                     <li class="nav-item active">
-                      <a class="nav-link" href="contact.html">Contact</a>
+                      <a class="nav-link" href="projects-link">Projects</a>
                     </li>
                     <li class="nav-item active">
-                      <a class="nav-link" href="portfolio.html">Portfolio</a>
+                      <a class="nav-link" href="contact-link">Contact</a>
                     </li>
                   </ul>
                 </div>
@@ -42,7 +42,7 @@
         <div class="container">
             <div class="row">
               <div class=col-lg-12>
-                <h1>Bio</h1>
+                <h1> <a id="bio-link">Bio</a></h1>
                  <hr>
               </div>
               <div class="col-lg-3 col-sm-12">
@@ -59,6 +59,87 @@
             </div>
         </div>
         </section>
+
+        <section id="projects">  
+          <div class="container">
+              <div class="row">
+                <div class=col-lg-12>
+                  <h1><a id="projects-link">Projects</a></h1>
+                   <hr>
+                </div>
+  
+                <div class="col-lg-4 col-sm-12">
+                  <div class="card example project">
+  
+                    <div class="card-body" id="flower"></div>
+  
+                    <div class="card-footer project">
+                        <a href="https://anthonystematz-breitling.github.io/" class="btn back">Resume Project</a>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-12">
+                  <div class="card example project">
+  
+                    <div class="card-body" id="band"></div>
+  
+                      <div class="card-footer project">
+                        <a href="https://anthonystematz-breitling.github.io/Fanpage/" class="btn back">Fanpage Project</a>
+                      </div>
+                  </div>
+                </div>
+  
+                <div class="col-lg-4 col-sm-12">
+                  <div class="card example project">
+  
+                      <div class="card-body" id="dragon"></div>
+  
+                          <div class="card-footer project">
+                            <a href="https://anthonystematz-breitling.github.io/FavAnimal/" class="btn back">Dragon Project</a>
+                          </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="contact">
+            <div class="container">
+                <div class="row">
+                  <div class=col-lg-12>
+                    <h1><a id="contact-link">Contact</a></h1>
+                     <hr>
+                  </div>
+    
+                  <div class="col-lg"></div>
+    
+                  <div class="col-lg-9 col-sm-12">
+                    <form  method="post" action="mailto:stembreit@gmail.com">
+    
+                        <div class="form-group">
+                            <label for="col">Name</label>
+                            <input type="text" class="form-control" placeholder="Name">
+                          </div>
+    
+                        <div class="form-group">
+                          <label for="exampleFormControlInput1">Email address</label>
+                          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        </div>
+    
+                        <div class="form-group">
+                          <label for="exampleFormControlTextarea1">Message</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+    
+                        <button type="submit" class="btn back">Submit</button>
+                      </form>
+                  </div>
+    
+                  <div class="col-lg"></div>
+                </div>
+              </div>
+              </section>
          <!--social media links-->
           <footer>
             <div class="container" id="icons">

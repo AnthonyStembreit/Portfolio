@@ -1,8 +1,15 @@
 .container{
     margin-top: 50px;
 }
+.navbar{
+    text-align: center;
+    display:inherit
+}
 .nav-link:hover{
     background-color: grey;
+}
+#name{
+font-size: 34px;
 }
 body{
     background-image: url(https://image.freepik.com/free-photo/3d-low-poly-abstract-background-with-connecting-lines-dots_1048-11673.jpg);
@@ -72,7 +79,8 @@ footer{
         left: 0;
 }
 #icons{
-    margin-top:0px;
+    margin-top: 0px;
+    padding:3px;
 }
 @media screen and (max-width: 768px){
     h1{
