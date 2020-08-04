@@ -1,10 +1,15 @@
 .navbar{
+    background-color:rgba(19, 52, 102, 0.5);
+    color: white !important;
     text-align: center;
     display:inherit;
     height: 115px;
 }
 .nav-link:hover{
     background-color: grey;
+}
+.nav-link{
+    color: white !important;
 }
 .navbar-nav.navbar-center{
     position: absolute;
@@ -15,6 +20,7 @@
 }
 #name{
 font-size: 34px;
+color: white !important;
 }
 body{
     background-image: url(https://image.freepik.com/free-photo/3d-low-poly-abstract-background-with-connecting-lines-dots_1048-11673.jpg);
@@ -91,6 +97,9 @@ footer{
     padding:3px;
 }
 @media screen and (max-width: 768px){
+    .navbar-nav.navbar-center{
+
+    }
     body{
         margin-bottom: unset;
     }
