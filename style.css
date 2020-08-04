@@ -1,6 +1,3 @@
-.container{
-    margin-top: 50px;
-}
 .navbar{
     text-align: center;
     display:inherit
@@ -33,9 +30,6 @@ h1{
 .text{
     padding-top: 35px;
 }
-.example{
-    margin:40px;
-}
 /*projects page*/
 #dragon{
     background-color:brown;
@@ -60,6 +54,7 @@ h1{
     background-color: rgba(33, 115, 170, 0.548);
 }
 .back{
+    margin: 5px;
     background-color:rgb(1, 19, 46);
     color:white;
     font-weight: 600;
