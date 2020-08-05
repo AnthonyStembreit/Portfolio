@@ -97,8 +97,18 @@ footer{
     padding:3px;
 }
 @media screen and (max-width: 768px){
+    .navbar{
+        width: 100%;
+    }
+    .navbar-toggler{
+        background-color: grey;
+    }
+    .navbar-collapse{
+        background-color: grey;
+        padding:15px;
+    }
     .navbar-nav.navbar-center{
-
+        position: relative;
     }
     body{
         margin-bottom: unset;
