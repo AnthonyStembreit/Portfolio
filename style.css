@@ -3,13 +3,16 @@
     color: white !important;
     text-align: center;
     display:inherit;
-    height: 115px;
+    height: 170px;
+    padding-top: 20px;
 }
 .nav-link:hover{
     background-color: grey;
 }
 .nav-link{
     color: white !important;
+    font-size: 24px;
+    margin: 10px;
 }
 .navbar-nav.navbar-center{
     position: absolute;
@@ -21,6 +24,7 @@
 #name{
 font-size: 34px;
 color: white !important;
+margin: 10px
 }
 body{
     background-image: url(https://image.freepik.com/free-photo/3d-low-poly-abstract-background-with-connecting-lines-dots_1048-11673.jpg);
