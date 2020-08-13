@@ -7,6 +7,7 @@
     padding-top: 20px;
 }
 .nav-link:hover{
+    border-radius: 5px;
     background-color: rgb(1, 19, 46);
     color: rgb(88, 204, 250);
 }
@@ -28,7 +29,10 @@ color: white !important;
 margin: 10px
 }
 body{
-    background-image: url(https://image.freepik.com/free-photo/3d-low-poly-abstract-background-with-connecting-lines-dots_1048-11673.jpg);
+    background-image: url(https://s3.envato.com/files/228789095/Preview.jpg);
+    /*https://s3.envato.com/files/228789095/Preview.jpg*/
+    /*https://images.all-free-download.com/images/graphicthumb/nostalgic_blue_background_06_hd_pictures_169782.jpg*/
+    background-attachment: fixed;
     background-size: contain;
     color:white;
     margin-bottom: 70px;
