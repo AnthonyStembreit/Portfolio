@@ -7,10 +7,11 @@
     padding-top: 20px;
 }
 .nav-link:hover{
-    background-color: grey;
+    background-color: rgb(1, 19, 46);
+    color: rgb(88, 204, 250);
 }
 .nav-link{
-    color: white !important;
+    color: white;
     font-size: 24px;
     margin: 10px;
 }
@@ -28,7 +29,7 @@ margin: 10px
 }
 body{
     background-image: url(https://image.freepik.com/free-photo/3d-low-poly-abstract-background-with-connecting-lines-dots_1048-11673.jpg);
-    background-size: cover;
+    background-size: contain;
     color:white;
     margin-bottom: 70px;
 }
@@ -72,6 +73,7 @@ h1{
 .project{
     background-color: rgba(33, 115, 170, 0.548);
 }
+/*buttons*/
 .back{
     margin: 5px;
     background-color:rgb(1, 19, 46);
@@ -80,6 +82,12 @@ h1{
 }
 .back:hover{
     color: rgb(88, 204, 250);
+}
+/*contact*/
+#form{
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgba(33, 115, 170, 0.5);
 }
 /*footer*/
 i{
@@ -103,12 +111,16 @@ footer{
 @media screen and (max-width: 768px){
     .navbar{
         width: 100%;
+        display: table-header-group;
+    }
+    #name{
+        font-size: xx-large;
     }
     .navbar-toggler{
-        background-color: grey;
+        background-color: rgb(1, 19, 46 );
     }
     .navbar-collapse{
-        background-color: grey;
+        background-color:rgba(1, 19, 46, 0.5);
         padding:15px;
     }
     .navbar-nav.navbar-center{
