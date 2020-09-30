@@ -5,20 +5,23 @@
     <!---css bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <!--javascript bootstrap-->
+  
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <!--font awesome icons-->
     <script src="https://kit.fontawesome.com/80d519acd1.js" crossorigin="anonymous"></script>
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap" rel="stylesheet">
     <!--personal css-->
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
     <body>
-      <header id="name">Anthony <br> Stematz-Breitling</a></header>
+      <header id="name">Anthony Stematz-Breitling</a></header>
       <nav class="navbar navbar-expand-lg">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="bars fas fa-bars"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -29,32 +32,28 @@
                   <a class="nav-link" href="#bio">About</a>
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link" href="#projects">Projects</a>
+                  <a class="nav-link" href="#contact">Contact</a>
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link" href="#contact">Contact</a>
+                  <a class="nav-link" href="#projects">Projects</a>
                 </li>
               </ul>
             </div>
-          </nav>
           </div>
         </div>
       </nav>
-        <div id=email>
-          <p>stembreit@gmail.com</p>
-        </div>
+       
         <section  id="bio">
         <div class="container">
             <div class="row">
-              <div class=col-lg-12>
-                <h1>Bio</h1>
-              </div>
-    
+              <div class="col"></div>
+              <div class="col-8" id="image">
                 <img class="prof" src="anthony.jpeg" alt="picture of Anthony">
+              </div>
 
-
-              <div class="col-lg-9 col-sm-12 text">
-                <p>A certified full-stack web-developer, graduating from University of Kansas Coding Boot-Camp,
+              <div class="col"></div>
+              <div class="col-lg-12 col-sm-12 text">
+                <p>A Full-Stack Web-Developer, graduating from University of Kansas Coding Boot-Camp,
                   that loves the challenge of solving real-world problems.
                   Confident in HTML, Bootstrap, jQuery, and mySQL. Enjoys contributing to meaningful projects in the work-place. 
                 </p>
@@ -62,6 +61,60 @@
             </div>
         </div>
         </section>
+
+<section id="contact">
+     <div class="container">
+        <div class="row">
+
+          <div class=col-lg-12>
+              <h1>Contact</h1>
+          </div>
+                
+          <div class="col"></div>
+               
+
+          <div id="email" class="col-lg-6 row text">
+
+              <div class="col-lg-12"><h2>Username: Anthony Stembreit</h2><hr></div>
+              
+                  
+                <a class="col-lg-12 row contact" target="_blank" href="https://github.com/AnthonyStematz-Breitling">
+                  <div class="col-1"><i class="fab fa-github-square"></i></div>
+                  <div class="col-1"></div>
+                  <div class="col"><p>Github</p></div>           
+                </a>
+            
+                    
+                    
+                <a  class="col-lg-12 row contact" href="mailto:stembreit@gmail.com">
+                  <div class="col-1"><i class="fas fa-envelope"></i></div>
+                  <div class="col-1"></div>
+                  <div class="col"><p>stembreit@gmail.com</p></div>
+                </a>
+          
+              
+              
+                <a class="col-lg-12 row contact" target="_blank" href="https://www.linkedin.com/in/anthony-stematz-breitling-6499231a8/">
+                  <div class="col-1"><i class="fab fa-linkedin"></i></div>
+                  <div class="col-1"></div>
+                  <div class="col"><p>linkedIn</p></div>
+                </a>
+              
+                       
+              <a class="col-lg-12 row contact" target="_blank" href="./Anthony Stematz-Breitling Resume (3).pdf"> 
+                  <div class="col-1"><i class="fas fa-file-pdf"></i></div>
+                  <div class="col-1"></div>
+                  <div class="col"><p>Resume</p></div>
+                
+              </a>
+           
+          </div>
+          <div class="col"></div>
+        </div>
+     </div>
+</section>
+              
+
 
         <section id="projects">  
           <div class="container">
@@ -134,14 +187,15 @@
                       <div class="card-header">
                         Coding Quiz
                       </div>
-                      <div class="card-body">
+                      <div class="card-body" id="quiz-body">
 
-                          <div id="quiz-carousel" class="carousel slide" data-ride="carousel">
+                          <div id="quiz-carousel" class="carousel slide" data-interval="false" data-pause="false"  data-ride="carousel">
                             <ol class="carousel-indicators">
                               <li data-target="#quiz-carousel" data-slide-to="0" class="active"></li>
                               <li data-target="#quiz-carousel" data-slide-to="1"></li>
                               <li data-target="#quiz-carousel" data-slide-to="2"></li>
                               <li data-target="#quiz-carousel" data-slide-to="3"></li>
+                              <li data-target="#quiz-carousel" data-slide-to="4"></li>
                             </ol>
 
                       <div class="carousel-inner">
@@ -162,6 +216,21 @@
                           <img src="./Coding-Quiz/screen-4.png" class="d-block w-100" alt="...">
                         </div>
 
+                        <div class="carousel-item">
+                          <div class="container tech d-block w-100">
+                            <div class="row">
+                              <div class="col-12"><p class="Tech Used:"></p></div>
+                              <div class="col">
+                                <ul>
+                                  <li>test</li>
+                                  <li>test</li>
+                                  <li>test</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
                       </div>
 
                       <a class="carousel-control-prev" href="#quiz-carousel" role="button" data-slide="prev">
@@ -173,11 +242,24 @@
                         <span class="sr-only">Next</span>
                       </a>
                     </div>
-                  
+
+                    <div class="overlay" id="quizDescription">
+                      <div class="col">
+                        <p class="description">Description
+                          <button class="back" id="closeQuiz"><i class="buttonIcon fas fa-arrow-circle-down"></i></button>
+                        </p>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, quas sed veritatis ullam cum laudantium ipsum magni placeat aut nemo alias quisquam aliquam dolores voluptas similique vero, ut voluptatibus saepe.</p>
+
+                      </div>
+                    </div>
+
                       <div class="card-footer project container">
                         <div class="row">
-                            <a href="https://anthonystematz-breitling.github.io/CodingQuiz/" class="btn col back">Deployed Site</a>
-                            <a href="https://github.com/AnthonyStematz-Breitling/CodingQuiz" class="btn col back">Github Repo</a>
+                            <a href="https://anthonystematz-breitling.github.io/CodingQuiz/" target="_blank" class="btn col back">Deployed Site</a>
+                            <a href="https://github.com/AnthonyStematz-Breitling/CodingQuiz" target="_blank" class="btn col back">Github Repo</a>
+                            <button class="back btn" data-toggle="tooltip" data-placement="top" title="Description" id="openQuiz"><i class=" buttonIcon fas fa-arrow-circle-up"></i></button>
+                            
                         </div>
                       </div>
                     </div>
@@ -242,54 +324,7 @@
             </div>
           </section>
 
-          <section id="contact">
-            <div class="container">
-                <div class="row">
-                  <div class=col-lg-12>
-                    <h1>Contact</h1>
-                  </div>
-            
-                  <div class="col-lg"></div>
-    
-                  <div class="col-lg-9 col-sm-12">
-                    <form id="form" class="container" method="post" action="mailto:stembreit@gmail.com">
-                        <div class="row">
-                        <div class="form-group col">
-                            <label for="col">Name</label>
-                            <input type="text" class="form-control" placeholder="Name">
-                          </div>
-    
-                        <div class="form-group col">
-                          <label for="exampleFormControlInput1">Email address</label>
-                          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                        </div>
-                        </div>
 
-                        <div class="form-group">
-                          <label for="exampleFormControlSelect1">Related Service</label>
-                          <select class="form-control" id="exampleFormControlSelect1" >
-                            <option>Choose a Service</option>
-                            <option>Static HTML and CSS Page</option>
-                            <option>Maitence of Existing Website</option>
-                            <option>Exclusivly UX design</option>
-                            <option>Interactive Buisness Application</option>
-                            <option>Other -Tell Me What You Need!</option>
-                          </select>
-                        </div>
-
-                        <div class="form-group">
-                          <label for="exampleFormControlTextarea1">Message</label>
-                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                        </div>
-    
-                        <button type="submit" class="btn back">Submit</button>
-                      </form>
-                  </div>
-    
-                  <div class="col-lg"></div>
-                </div>
-              </div>
-              </section>
               <!--modal for resume-->
               <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
@@ -340,5 +375,6 @@
               </div>
             </div>
           </footer>
+          <script src="./portfolio.js"></script>
     </body>
 </html>
