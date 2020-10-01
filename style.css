@@ -124,6 +124,7 @@ a:hover {
 }
 .tech h3{
     text-align: center !important;
+    padding:10px;
 }
 .overlay {
     z-index:16;
