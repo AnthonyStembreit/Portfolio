@@ -1,9 +1,11 @@
 $(document).ready( function(){
     console.log("hit start") 
-    $("body").mouseenter(function(){
-        $("#quiz-carousel").carousel('pause')
-    })
+ $("body").mouseenter(function(){
+    $("#quiz-carousel").carousel('pause')
+})
 
+let cardHeight = $(".d-block").css("height")
+$(".tech").css("height", cardHeight)
 
 $("#openQuiz").on("click", function(){
     $("#quizDescription").attr("style", "height:100%")
@@ -26,4 +28,6 @@ $("#quiz-body").mouseleave(function(){
     $("#quiz-carousel").carousel('pause')
   
 })
+
+
 })
