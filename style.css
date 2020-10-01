@@ -116,9 +116,14 @@ a:hover {
 .project{
     background-color: rgb(204, 204, 204);
 }
+
 .tech{
     background-color: rgb(204, 204, 204);
     font-size:22px;
+    text-align:left !important;
+}
+.tech h3{
+    text-align: center !important;
 }
 .overlay {
     z-index:16;
@@ -153,9 +158,6 @@ a:hover {
     font-size: 22px;
     border-radius:10px;
     background-color: rgba(218, 218, 218, 0);
-}
-.back i{
-    font-size:22px;
 }
 .back:hover{
     background-color: rgb(58, 58, 58);
@@ -217,7 +219,10 @@ footer{
         margin:5px;
     }
     .back{
-        float:right;
+        font-size: 16px;
+    }
+    .back i{
+        font-size: 22px;
     }
    .bio{
        text-align:center;
