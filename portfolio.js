@@ -1,6 +1,8 @@
-$( document ).ready( function(){
-    console.log("hit start")
-    $("#quiz-carousel").carousel('pause')
+$(document).ready( function(){
+    console.log("hit start") 
+    $("body").mouseenter(function(){
+        $("#quiz-carousel").carousel('pause')
+    })
 
 
 $("#openQuiz").on("click", function(){
@@ -13,7 +15,7 @@ $("#closeQuiz").on("click", function(){
 })
 $("#quiz-body").mouseenter( function(){
     console.log("hit in")
-    
+
     $("#quiz-carousel").carousel('next')
     $("#quiz-carousel").carousel('cycle')
 
