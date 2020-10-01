@@ -154,6 +154,9 @@ a:hover {
     border-radius:10px;
     background-color: rgba(218, 218, 218, 0);
 }
+.back i{
+    font-size:22px;
+}
 .back:hover{
     background-color: rgb(58, 58, 58);
     color: rgb(240, 240, 240);
@@ -162,7 +165,7 @@ a:hover {
 .back:hover i{
     color:white;
     background-color: rgba(241, 241, 241, 0);
-    font-size:30px;
+    font-size:28px;
 }
 /*icons*/
 i{
