@@ -6,7 +6,7 @@ $("body").mouseenter(function(){
     $("#inovative").carousel('cycle')
 })
 
-let cardHeight = $(".d-block").css("height")
+let cardHeight = $(".height").css("height")
 $(".tech").css("height", cardHeight)
 
 function Card(showBtn, hideBtn, description, cardBody, carousel){
