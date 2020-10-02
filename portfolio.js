@@ -2,6 +2,8 @@ $(document).ready( function(){
      
 $("body").mouseenter(function(){
     $(".carousel").carousel('pause')
+    $("#inovative").carousel('next')
+    $("#inovative").carousel('cycle')
 })
 
 let cardHeight = $(".d-block").css("height")
@@ -51,5 +53,28 @@ exploration.closeDescription()
 exploration.cycle()
 exploration.pause()
 
+let tracking = new Card("#openTracking", "#closeTracking", "#trackingDescription", "#tracking-body", "#tracking-carousel")
+tracking.openDescription()
+tracking.closeDescription()
+tracking.cycle()
+tracking.pause()
+
+let weather = new Card("#openWeather", "#closeWeather", "#weatherDescription", "#weather-body", "#weather-carousel")
+weather.openDescription()
+weather.closeDescription()
+weather.cycle()
+weather.pause()
+
+let readme = new Card("#openReadme", "#closeReadme", "#readmeDescription", "#readme-body", "#readme-carousel")
+readme.openDescription()
+readme.closeDescription()
+readme.cycle()
+readme.pause()
+
+let burger = new Card("#openBurger", "#closeBurger", "#burgerDescription", "#burger-body", "#burger-carousel")
+burger.openDescription()
+burger.closeDescription()
+burger.cycle()
+burger.pause()
 
 })

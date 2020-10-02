@@ -11,8 +11,8 @@
 }
 .nav-link:hover{
     border-radius: 5px;
-    background-color: rgb(204, 204, 204);
-    color: rgb(10, 10, 10)
+    background-color: rgb(82, 80, 80);
+    color: rgb(240, 240, 240);
 }
 .nav-link{
     font-weight:700;
@@ -26,6 +26,20 @@
     font-size: 90px;
     text-align: center;
     color:rgb(138, 137, 137);
+}
+#inovative{
+    height: 52px;
+    border-radius: 20px;
+    background-color: rgb(82, 80, 80);
+}
+.words{
+    font-family: 'Martel', serif;
+    text-align: center;
+    padding:2px;
+    margin:0px;
+    color:rgb(240, 240, 240);
+    font-size:32px;
+    font-weight: 700;
 }
 body{
     background-image: url(https://elevateservices.com/wp-content/uploads/AdobeStock_208568531.jpeg);
@@ -79,10 +93,14 @@ a{
 a:hover {
     text-decoration: none;
 }
+.contact p{
+    font-size: 25px;
+}
 .contact:hover p{
     background-color: rgb(82, 80, 80);
     border-radius:15px;
     color: rgb(240, 240, 240);
+    font-size:30px;
     padding:5px;
 }
 .contact:hover i{
