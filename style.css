@@ -218,16 +218,21 @@ footer{
     #name{
         font-size: xx-large;
     }
+    #market{
+        font-size:25px;
+        padding:5px;
+    }
     .navbar-toggler{
-        background-color: rgb(204, 204, 204);
+        background-color:  rgb(240, 240, 240);
     }
     .bars{
         font-size: 2.5rem;
-        color:rgb(70, 70, 70)
+        color:rgb(82, 80, 80);
     }
-    .navbar-collapse{
-        background-color:rgb(149, 149, 149);
+    .navbar-collapse .nav-link{
+        background-color:rgb(82, 80, 80);
         padding:15px;
+        color: rgb(240, 240, 240)
     }
     body{
         margin-bottom: unset;
@@ -240,6 +245,7 @@ footer{
     }
     .back{
         font-size: 16px;
+        padding:0px;
     }
     .back i{
         font-size: 22px;
