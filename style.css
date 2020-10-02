@@ -66,9 +66,8 @@ h1{
 .prof{
     height: 400px;
     width: 400px;
-    border-style: groove;
-    border-color: rgb(58, 58, 58);
-    border-width: 8px;
+ 
+    border-radius: 10px;
     justify-content:center;
 }
 #image{
@@ -166,7 +165,7 @@ a:hover {
 }
 /*buttons*/
 .buttonIcon{
-    font-size:30px;
+    font-size:22px;
     color:black;
     background-color: rgb(204, 204, 204);
 }
@@ -187,7 +186,7 @@ a:hover {
 .back:hover i{
     color:white;
     background-color: rgba(241, 241, 241, 0);
-    font-size:28px;
+    
 }
 /*icons*/
 i{
