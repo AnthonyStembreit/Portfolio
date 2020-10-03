@@ -1,9 +1,17 @@
 # Portfolio
+
+## Deployed
 https://anthonystembreit.github.io/Portfolio/
 
-Page to serve as my ongoing portfolio, includes Bio, Projects, and Contact pages.
-![image](https://user-images.githubusercontent.com/64037800/92848960-5ab7a580-f3b0-11ea-852d-400269440293.png)
-![image](https://user-images.githubusercontent.com/64037800/92848990-64410d80-f3b0-11ea-8f5a-c907819b47fc.png)
-![image](https://user-images.githubusercontent.com/64037800/92849001-6acf8500-f3b0-11ea-9cdf-f12d2bc86fb3.png)
+## Description
+An up-to-date webpage that includes my contact info and displays info about my projects that is easy to access and aesthetically pleasing.
 
+## User-Story
+As a job seeking student in Trilogies Coding Bootcamp,
 
+I want a professional and polished website,
+
+So that I can impress recruitors and stand out from the crowd.
+
+## Contributers
+* [AnthonyStembreit](https://github.com/AnthonyStembreit)
