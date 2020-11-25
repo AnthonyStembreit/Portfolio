@@ -1,7 +1,16 @@
 # Portfolio
 
+
 ## Deployed
 https://anthonystembreit.github.io/Portfolio/
+
+## Tech Used: 
+* jQuery
+* Bootstrap
+* HTML
+* CSS
+* Font Awesome
+* Google Fonts
 
 ## Description
 An up-to-date webpage that includes my contact info and displays info about my projects that is easy to access and aesthetically pleasing.
