@@ -1,6 +1,6 @@
 $(document).ready( function(){
      
-$("body").mouseenter(function(){
+$("body").mouseover(function(){
     $(".carousel").carousel('pause')
     $("#inovative").carousel('next')
     $("#inovative").carousel('cycle')
