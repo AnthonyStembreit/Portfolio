@@ -1,14 +1,22 @@
 $(document).ready( function(){
      
-
+// $("body").mouseover(function(){
+//     $(".carousel").carousel('pause')
+//     $("#inovative").carousel('next')
+//     $("#inovative").carousel('cycle')
+//     let cardHeight = $(".height").css("height")
+//     console.log(cardHeight)
+//     $(".tech").css("height", cardHeight)
+// })
+$("body").mouseenter(function(){
     $(".carousel").carousel('pause')
     $("#inovative").carousel('next')
     $("#inovative").carousel('cycle')
     let cardHeight = $(".height").css("height")
     console.log(cardHeight)
     $(".tech").css("height", cardHeight)
-
-$("body").mouseenter(function(){
+})
+$("#contact").mouseenter(function(){
     $(".carousel").carousel('pause')
     $("#inovative").carousel('next')
     $("#inovative").carousel('cycle')
