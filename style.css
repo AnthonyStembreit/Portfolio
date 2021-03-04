@@ -262,4 +262,13 @@ footer{
    footer{
        position:static;
    }
+  #email{
+      padding:22px;
+      max-width:100%;
+      margin:0px;
+  }
+  .mobileFoot{
+      max-width:100%;
+      margin:0px;
+  }
 }
