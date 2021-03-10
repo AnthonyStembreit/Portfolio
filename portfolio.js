@@ -95,3 +95,18 @@ ProjectSix.cycle()
 ProjectSix.pause()
 
 })
+//media queries to change html for mobile mode
+var media1000 = window.matchMedia("(max-width: 1000px)")
+media1000.addListener(mediaChange1)
+function mediaChange1(e){
+    if(e.matches){
+        let cardHeight = $(".height").css("height")
+        console.log(cardHeight)
+        $(".tech").css("height", cardHeight)
+        $(".carousel").attr("data-interval", "0")
+        $(".carousel").carousel('pause')
+        console.log( $(".carousel").attr("data-interval"))
+        $("#inovative").attr("data-interval", "4000")
+        $("#inovative").carousel('cycle')
+    }
+}
