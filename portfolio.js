@@ -1,5 +1,8 @@
 $(document).ready(function () {
-
+    $("#btnId").on("click", event => {
+        event.preventDefault()
+        console.log(this)
+    })
     function carouselSetUp() {
         console.log("set up hit")
         $("#inovative").carousel('next')
@@ -92,4 +95,5 @@ $(document).ready(function () {
             carouselSetUp()
         }
     }
+    
 })
