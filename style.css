@@ -21,11 +21,20 @@
     margin: 10px;
 }
 /*header*/
+header{
+    display:flex;
+    justify-content:space-between;
+    align-content: flex-start;
+}
 #name{
-    padding:25px;
-    font-size: 90px;
-    text-align: center;
+    padding:15px;
+    font-size: 60px;
+    text-align: right;
     color:rgb(138, 137, 137);
+    padding-left: 120px;
+    background-color: rgba(165, 42, 42, 0.753);
+    border-radius: 3px;
+  
 }
 #inovative{
     height: 52px;

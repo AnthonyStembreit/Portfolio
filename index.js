@@ -28,6 +28,7 @@ $("#project-nav").click(e => {
     aboutSection.addClass("hide");
     contactSection.addClass("hide")
 })
+
 $("#name").click(e => {
     projectSection.removeClass("hide");
     contactSection.removeClass("hide");
