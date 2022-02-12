@@ -62,6 +62,15 @@ h1{
     text-align: center;
     border-radius: 15px;
 }
+section{
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.hide{
+    display: none;
+}
 /*bio*/
 .prof{
     height: 400px;
@@ -75,10 +84,23 @@ h1{
 }
 .text{
     margin-top:20px;
-    padding: 25px;
+    padding: 20px;
     font-size: 22px;
     background-color: rgb(204, 204, 204);
     border-radius: 10px;
+}
+#tech{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+}
+#tech-title{
+    text-align: center;
+    font-size: 30px;
+    margin-top:0px;
+    margin-bottom: 15px;
+    text-decoration: underline;
+    width:100%;
 }
 /*contact*/
 #email{
