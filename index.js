@@ -1,9 +1,21 @@
+//sections
 const aboutSection = $("#bio")
 const contactSection = $("#contact")
 const projectSection = $("#projects")
+//navlinks
 const aboutNavLink = $("#about-nav")
 const contactNavLink = $("#contact-nav")
 const projectNavLink = $("#project-nav")
+//modal elements
+const modal = $("#modal")
+const closeModalBtn = $("#modal-close")
+const modalTitle = $("#modal-project-title")
+const userSpanOne = $("#as-a")
+const userSpanTwo = $("#i-want")
+const userSpanThree = $("#so-that")
+const modalTechList = $("#modal-tech-list")
+const modalDesc = $("#modal-description")
+
 //Navigation
 function changePage(show, hide1, hide2){
     show.removeClass("hide");
@@ -68,7 +80,7 @@ for (i = 0; i < projectArr.length; i++) {
                  <a href=${deployed}>Deplyed</a>
                  <a href=${github}>Github</a>
                  <!--but not on these buttons here-->
-                 <button id="${i}-overview">Overview</button>
+                 <button id="${i}-overview" value=${i}>Overview</button>
                  <button id="${i}-replay">Replay</button>
              </div> 
 
@@ -106,9 +118,11 @@ for (i = 0; i < projectArr.length; i++) {
     //overview on click
     $(`#${i}-overview`).click(e => {
         e.preventDefault();
-        console.log(e.target.id)
+        presentModal(e.target.value)
+
     })
 }
+//animate project card
 function animateImgs(imgArr) {
     let currentImg = 0;
     let imgInterval = setInterval(function () {
@@ -136,4 +150,33 @@ function revealEL(element) {
     element.attr("style", "transition: .8s ease;")
     element.addClass("overlay")
 }
+
+//project modal
+function clearModal(){
+    modalTitle.text("")
+    userSpanOne.text("")
+    userSpanTwo.text("")
+    userSpanThree.text("")
+    modalDesc.text("")
+    modalTechList.html("")
+}
+function presentModal(id){
+    let { title, description, asa, iwant, sothat, techused} = projectArr[id]
+    modalTitle.text(title)
+    userSpanOne.text(asa)
+    userSpanTwo.text(iwant)
+    userSpanThree.text(sothat)
+    modalDesc.text(description)
+    let techList = techused.map(tech =>{
+        return `<li>${tech}</li>`
+    })
+    modalTechList.append(techList.join(""))
+    modal.removeClass("hide")
+}
+closeModalBtn.click(e => {
+    e.preventDefault();
+    console.log("hit")
+    clearModal()
+    modal.addClass("hide")
+})
 

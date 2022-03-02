@@ -12,7 +12,13 @@ const projectArr = [
         img4: "./images/ProjectOne/Invitation.png",
         alt4: "invitation with unique url that you can send to friends",
         img5: "./images/ProjectOne/home.png",
-        alt5: "homepage with desription of application"
+        alt5: "homepage with desription of application",
+        description: "test describing things",
+        asa:" muscician",
+        iwant: " a new guitar",
+        sothat: " I do not have to constantly retune for different songs",
+        techused: ["HTML", "CSS", "JavaScript"]
+
     },
     {
         title: "p2",
@@ -25,7 +31,15 @@ const projectArr = [
         img3: "img-2.3",
         alt3: "alt-2.3",
         img4: "img-2.4",
-        alt4: "alt-2.4"
+        alt4: "alt-2.4",
+        img5: "./images/ProjectOne/home.png",
+        alt5: "homepage with desription of application",
+        description: "test describing things",
+        asa:" muscician",
+        iwant: " a new guitar",
+        sothat: " I do not have to constantly retune for different songs",
+        techused: ["HTML", "CSS", "JavaScript"]
+
     },
     {
         title: "p3",
@@ -38,7 +52,14 @@ const projectArr = [
         img3: "img-3.3",
         alt3: "alt-3.3",
         img4: "img-3.4",
-        alt4: "alt-3.4"
+        alt4: "alt-3.4",
+        img5: "./images/ProjectOne/home.png",
+        alt5: "homepage with desription of application",
+        description: "test describing things",
+        asa:" muscician",
+        iwant: " a new guitar",
+        sothat: " I do not have to constantly retune for different songs",
+        techused: ["HTML", "CSS", "JavaScript"]
     },
     {
         title: "p3",
@@ -51,6 +72,13 @@ const projectArr = [
         img3: "img-3.3",
         alt3: "alt-3.3",
         img4: "img-3.4",
-        alt4: "alt-3.4"
+        alt4: "alt-3.4",
+        img5: "./images/ProjectOne/home.png",
+        alt5: "homepage with desription of application",
+        description: "test describing things",
+        asa:" muscician",
+        iwant: " a new guitar",
+        sothat: " I do not have to constantly retune for different songs",
+        techused: ["HTML", "CSS", "JavaScript"]
     }
 ]

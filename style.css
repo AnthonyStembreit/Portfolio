@@ -30,7 +30,7 @@ i{
     text-align: center;
 }
 .hide{
-    display: none;
+    display: none !important;
 }
 /*navbar*/
 .navbar{
