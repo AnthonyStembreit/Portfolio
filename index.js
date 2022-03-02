@@ -16,21 +16,22 @@ const userSpanThree = $("#so-that")
 const modalTechList = $("#modal-tech-list")
 const modalDesc = $("#modal-description")
 
+let animationBoolean = false
 //Navigation
-function changePage(show, hide1, hide2){
+function changePage(show, hide1, hide2) {
     show.removeClass("hide");
     hide1.addClass("hide");
     hide2.addClass("hide");
 }
-function changeActive(active, deactivate1, deactivate2){
+function changeActive(active, deactivate1, deactivate2) {
     active.addClass("active-nav");
     deactivate1.removeClass("active-nav");
     deactivate2.removeClass("active-nav");
 }
 aboutNavLink.click(e => {
     e.preventDefault();
-   changePage(aboutSection, contactSection, projectSection)
-   changeActive(aboutNavLink, contactNavLink, projectNavLink)
+    changePage(aboutSection, contactSection, projectSection)
+    changeActive(aboutNavLink, contactNavLink, projectNavLink)
 })
 
 contactNavLink.click(e => {
@@ -98,21 +99,32 @@ for (i = 0; i < projectArr.length; i++) {
     $(`#${i}-container`).mouseover(async e => {
         e.preventDefault();
         console.log("hover " + e.target.id)
-        if (imgArr[4].attr("class").indexOf("overlay") === -1) {
+        if (animationBoolean === true) {
+            return;
+        } else if (imgArr[4].attr("class").indexOf("overlay") === -1) {
             animateImgs(imgArr)
         }
     })
 
+    // $(`#${i}-replay`).mouseover(e => {
+    //     if (animationBoolean === true) {
+    //         $(`#${i}-replay`).attr("style", "border: 3px red solid")
+    //     } else {
+    //         $(`#${i}-replay`).attr("style", "border: unset")
+    //     }
+    // })
     //replay animation on click
     $(`#${i}-replay`).click(e => {
         e.preventDefault();
-        imgArr[5].attr("style", "opacity: 0")
-        imgArr[2].removeClass("flip-box-inner flip-now")
-        for (i = 1; i < imgArr.length; i++) {
-            resetEl(imgArr[i])
+        if (animationBoolean !== true) {
+            imgArr[5].attr("style", "opacity: 0")
+            imgArr[2].removeClass("flip-box-inner flip-now")
+            for (i = 1; i < imgArr.length; i++) {
+                resetEl(imgArr[i])
+            }
+            revealEL(imgArr[0])
+            animateImgs(imgArr)
         }
-        revealEL(imgArr[0])
-        animateImgs(imgArr)
     })
 
     //overview on click
@@ -124,14 +136,16 @@ for (i = 0; i < projectArr.length; i++) {
 }
 //animate project card
 function animateImgs(imgArr) {
+    animationBoolean = true
     let currentImg = 0;
     let imgInterval = setInterval(function () {
         currentImg++;
-        if(currentImg >= 5){
+        if (currentImg >= 5) {
             console.log(currentImg)
             clearInterval(imgInterval);
             resetEl(imgArr[0])
             imgArr[5].attr("style", "opacity: 1")
+            animationBoolean = false
             return;
         }
         if (imgArr[currentImg] === imgArr[3]) {
@@ -152,7 +166,7 @@ function revealEL(element) {
 }
 
 //project modal
-function clearModal(){
+function clearModal() {
     modalTitle.text("")
     userSpanOne.text("")
     userSpanTwo.text("")
@@ -160,14 +174,14 @@ function clearModal(){
     modalDesc.text("")
     modalTechList.html("")
 }
-function presentModal(id){
-    let { title, description, asa, iwant, sothat, techused} = projectArr[id]
+function presentModal(id) {
+    let { title, description, asa, iwant, sothat, techused } = projectArr[id]
     modalTitle.text(title)
     userSpanOne.text(asa)
     userSpanTwo.text(iwant)
     userSpanThree.text(sothat)
     modalDesc.text(description)
-    let techList = techused.map(tech =>{
+    let techList = techused.map(tech => {
         return `<li>${tech}</li>`
     })
     modalTechList.append(techList.join(""))
