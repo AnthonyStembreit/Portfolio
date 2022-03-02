@@ -61,14 +61,6 @@
       </div>
     </nav>
   </header>
-  <!-- <div class="container">
-    <div class="row">
-      <div class="col"></div>
-      <div class="col-8" id="image">
-        <img class="prof" src="./images/received_636634633666593_7.jpeg" alt="picture of Anthony">
-      </div>
-      <div class="col"></div>
-    </div> -->
   <section id="bio">
     <div class="fancy">
       <h1>About</h1>
@@ -164,76 +156,77 @@
     </div>
   </section>
 
-  <!--social media links-->
-  <footer>
-    <div class="container" id="icons">
-      <div class="row mobileFoot">
-        <div class="col"></div>
+  <!--project modal-->
+  <div id="modal" >
+    <div id="inner-modal">
+      <button id="modal-close">X</button>
+      <h2 id="modal-project-title"></h2>
 
-        <div class="col-lg-1 bottom">
-          <a target="_blank" href="https://www.linkedin.com/in/anthony-stembreit">
-            <i class="fab fa-linkedin"></i>
-          </a>
-        </div>
+      <div class="modal-section" id="user-story">
+        <p class="modal-mini-title">User Story</p>
+       
+        <ul class="modal-sect-body">
+          <li>As a <span id="as-a"></span></li>
+          <li>I want <span id="i-want"></span></li>
+          <li>So that <span id="so-that"></span></li>
+        </ul>
 
-        <div class="col-lg-1 bottom">
-          <a target="_blank" href="./Updated-Resume.pdf">
-            <i class="fas fa-file-pdf"></i>
-          </a>
-        </div>
+      </div>
 
-        <div class="col-lg-6 bottom">
-          <div id="inovative" class="carousel slide carousel-fade" data-interval="4000" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="container words d-block w-100">
-                  <div class="row">
-                    <div class="col">
-                      <p class="words">Driven</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="container words d-block w-100">
-                  <div class="row">
-                    <div class="col">
-                      <p class="words">Detailed Oriented</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="container words d-block w-100">
-                  <div class="row">
-                    <div class="col">
-                      <p class="words" id="market">Full-Stack Web Developer
-                      <p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+      <div class="modal-section" id="tech-used">
+        <p class="modal-mini-title">Tech Used</p>
 
-          </div>
+        <ul class="modal-sect-body" id="modal-tech-list"></ul>
+      </div>
 
-        </div>
+      <div class="modal-section" id="modal-desc-sect">
+        <p class="modal-mini-title">Description</p>
 
+        <p class="modal-sect-body" id="modal-description"></p>
+      </div>
 
-        <div class="col-lg-1 bottom">
-          <a href="mailto:stembreit@gmail.com">
-            <i class="fas fa-envelope"></i>
-          </a>
-        </div>
-
-        <div class="col-lg-1 bottom">
-          <a target="_blank" href="https://github.com/AnthonyStembreit">
-            <i class="fab fa-github-square"></i>
-          </a>
-        </div>
-        <div class="col"></div>
+      <div class="modal-section" id="images">
+        <!--carousel goes here-->
       </div>
     </div>
+  </div>
+  <!--social media links-->
+  <footer id="icons" class="mobileFoot">
+
+    <a class="bottom" target="_blank" href="https://www.linkedin.com/in/anthony-stembreit">
+      <i class="fab fa-linkedin"></i>
+    </a>
+
+    <a class="bottom" target="_blank" href="./Updated-Resume.pdf">
+      <i class="fas fa-file-pdf"></i>
+    </a>
+
+    <div id="inovative" class="bottom carousel slide carousel-fade" data-interval="4000" data-ride="carousel">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <p class="words d-block w-100">Driven</p>
+        </div>
+
+        <div class="carousel-item">
+          <p class="words d-block w-100">Detailed Oriented</p>
+        </div>
+
+        <div class="carousel-item">
+          <p class="words d-block w-100" id="market">Full-Stack Web Developer</p>
+        </div>
+
+      </div>
+    </div>
+
+    <a class="bottom" href="mailto:stembreit@gmail.com">
+      <i class="fas fa-envelope"></i>
+    </a>
+
+    <a class="bottom" target="_blank" href="https://github.com/AnthonyStembreit">
+      <i class="fab fa-github-square"></i>
+    </a>
+
   </footer>
   <script src="./portfolio.js"></script>
   <script src="./projects.js"></script>

@@ -76,8 +76,10 @@ for (i = 0; i < projectArr.length; i++) {
      </div>`
     //appending project card to page
     projectSection.append(projectCard)
+
     let imgArr = [$(`#${i}-img1`), $(`#${i}-img2`), $(`#${i}-img3`), $(`#${i}-img4`), $(`#${i}-img5`), $(`#${i}-final`)]
     revealEL(imgArr[0])
+
     //event listeners for project card
 
     //img container hover
@@ -88,6 +90,7 @@ for (i = 0; i < projectArr.length; i++) {
             animateImgs(imgArr)
         }
     })
+
     //replay animation on click
     $(`#${i}-replay`).click(e => {
         e.preventDefault();
@@ -99,6 +102,7 @@ for (i = 0; i < projectArr.length; i++) {
         revealEL(imgArr[0])
         animateImgs(imgArr)
     })
+
     //overview on click
     $(`#${i}-overview`).click(e => {
         e.preventDefault();
@@ -122,10 +126,12 @@ function animateImgs(imgArr) {
         revealEL(imgArr[currentImg])
     }, 1000);
 }
+
 function resetEl(element) {
     element.attr("style", "transition: unset;")
     element.removeClass("overlay")
 }
+
 function revealEL(element) {
     element.attr("style", "transition: .8s ease;")
     element.addClass("overlay")
