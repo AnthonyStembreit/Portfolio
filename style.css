@@ -33,41 +33,54 @@ i{
     display: none !important;
 }
 /*navbar*/
-.navbar{
+/* .navbar{
     color: white !important;
-    text-align: center;
     display:inherit;
-   
-}
+    
+} */
 .navbar-center{
+    text-align: center;
     width: 100%;
-    justify-content: center;
+    justify-content: space-around;
+    height: 200px;
     font-size: 20px;
-    background-color: var(--transparent);
+    /* background-color: var(--transparent); */
 }
 .nav-link:hover{
-    background-color: var(--solid);
+    background-color: var(--transparent);
     color: var(--text);
     text-decoration: underline var(--text);
     text-underline-offset: 5px;
 }
 .nav-link{
-    border-radius: 5px;
+    /* border-radius: 5px; */
     font-weight:700;
     background-color: rgb(253 216 115 / 14%);
-    border: solid 4px var(--solid);
+    /* border: solid 4px var(--solid); */
     color: var(--text);
     text-decoration: underline var(--text);
     text-underline-offset: 5px;
     font-size: 30px;
-    margin: 10px;
+    /* margin-top: 10px;
+    margin-bottom: 10px; */
     padding:5px;
     padding-bottom: 0px;
+    width:100%;
 }
 .active-nav{
-    background-color: var(--solid);
+    background-color: var(--transparent);
     text-decoration: underline solid var(--text)!important;
     text-underline-offset: 5px;
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    left:0;
+    position: fixed;
+    top: 40px;
+    background-color: var(--solid);
+    border-radius: 10px;
+
 }
 /*header*/
 header{
@@ -77,14 +90,16 @@ header{
 }
 #name{
     padding:5px;
-    font-size: 40px;
-    text-align: right;
-    color:rgb(230 168 169);
-    padding-left: 120px;
-    padding-right: 15px;
+    font-size: 30px;
+    /* text-align: right; */
+    color:var(--text);
+    /* padding-left: 120px;
+    padding-right: 15px; */
+    width:100%;
+    /* background-color: var(--transparent); */
     background-color: var(--solid);
-    border-bottom-right-radius: 15px;
-    border-top-right-radius: 12px;
+    /* border-bottom-right-radius: 15px;
+    border-top-right-radius: 12px; */
     position: absolute;
     bottom: 5px;
     left: 0px
@@ -108,12 +123,11 @@ header{
 
 /*photo of me*/
 #profile{
-    width:50%;
     position: relative;
-    padding-left: 5%;
+    text-align: center;
 }
 #profile-pic{
-    height: 300px;
+    height: 250px;
     border-radius: 900px;
     margin: 5px;
     padding: 5px;
@@ -137,11 +151,6 @@ h1{
     /* margin-bottom: 45px; */
     border-radius: 10px;
 }
-.extra-fancy{
-    width:25%;
-    background-color: var(--solid);
-    height: 50%;
-}
 .super-fancy{
     width:100%;
     display: flex;
@@ -151,6 +160,7 @@ h1{
     padding-top:40px;
     padding-bottom:40px;
     background-color: var(--transparent);
+    margin-bottom: 30px;
 }
 
 
@@ -175,22 +185,22 @@ h1{
     background-color: rgb(253 216 115 / 24%);
     padding: 15px;
     border-radius: 20px;
+    margin-top: 30px;
 }
 #tech{
     display: flex;
     justify-content: space-around;
     flex-wrap:wrap;
-    width: 100%;
+    width: 80%;
 }
-#tech p{
-    margin-top: 30px;
+.tech-card{
+    padding:0px;
+    width: 25%;
 }
-.mini-title{
+.tech-title{
     text-align: center;
-    font-size: 30px;
-    text-decoration: underline;
-    width:100%;
 }
+
 
 /*contact*/
 #links{

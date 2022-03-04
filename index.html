@@ -30,7 +30,7 @@
 
 <body>
 
-  <header>
+  <!-- <header>
     <div id="profile">
       <img id="profile-pic" src="./images/received_636634633666593_7.jpeg" />
       <p id="name">Anthony StemBreit</p>
@@ -60,44 +60,34 @@
         </div>
       </div>
     </nav>
-  </header>
+  </header> -->
+
+  <aside>
+    <div id="profile">
+      <img id="profile-pic" src="./images/received_636634633666593_7.jpeg" />
+      <p id="name">Anthony StemBreit</p>
+    </div>
+
+    <ul class="navbar-nav navbar-center">
+      <li class="nav-item">
+        <a class="nav-link" id="about-nav" href="#">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="contact-nav" href="#">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="project-nav" href="#">Projects</a>
+      </li>
+    </ul>
+  </aside>
   <section id="bio">
-    <div class="fancy">
-      <h1>About</h1>
+    <div class="super-fancy">
+      <div class="fancy">
+        <h1>About</h1>
+      </div>
     </div>
 
     <div class="text" id="tech">
-      <h2 class="mini-title">Languages & Technologies</h2>
-
-      <ul>
-        <li>JavaScript</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <!-- <li>Local Storage</li> -->
-      </ul>
-
-      <ul>
-        <li>React</li>
-        <li>Node/Express</li>
-        <!-- <li>Express</li> -->
-        <li>Handlebars</li>
-      </ul>
-
-      <ul>
-        <li>SQL | Sequelize</li>
-        <li>Bcyrpt/Session</li>
-        <!-- <li>Passport w/ Session</li> -->
-        <li>MongoDB | Mongoose</li>
-      </ul>
-
-      <ul>
-        <li>Bootstrap</li>
-        <li>jQuery</li>
-        <li>Git</li>
-        <!-- <li>3rd-party API's</li> -->
-      </ul>
-
-      <h2 class="mini-title">Bio</h2>
       <p class="inner-text">
         After graduating, I was inspired to help others going through the bootcamp and have worked as a teaching
         assistant and tutor for the past year.
@@ -105,13 +95,31 @@
         at multiple levels of understanding, and have expanded my knowledge of many technical concepts such as Object
         Oriented Prgramning and Functional Programming.
       </p>
+
+      <div class="tech-card">
+        <p class="tech-title">React</p>
+        <p class="tech-text"></p>
+      </div>
+
+      <div class="tech-card">
+        <p class="tech-title">SQL</p>
+        <p class="tech-text"></p>
+      </div>
+
+      <div class="tech-card">
+        <p class="tech-title">RESTful APIs</p>
+        <p class="tech-text"></p>
+      </div>
+
     </div>
 
   </section>
 
   <section id="contact">
-    <div class="fancy">
-      <h1>Contact</h1>
+    <div class="super-fancy">
+      <div class="fancy">
+        <h1>Contact</h1>
+      </div>
     </div>
 
     <div id="links" class="text">
@@ -146,12 +154,8 @@
 
   <section id="projects">
     <div class="super-fancy">
-      <div class="extra-fancy">
-      </div>
       <div class="fancy">
         <h1>Projects</h1>
-      </div>
-      <div class="extra-fancy">
       </div>
     </div>
   </section>
@@ -164,7 +168,7 @@
 
       <div class="modal-section" id="user-story">
         <p class="modal-mini-title">User Story</p>
-       
+
         <ul class="modal-sect-body">
           <li>As a <span id="as-a"></span></li>
           <li>I want <span id="i-want"></span></li>
