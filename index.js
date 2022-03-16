@@ -88,7 +88,7 @@ for (i = 0; i < projectArr.length; i++) {
          </div>
      </div>`
     //appending project card to page
-    projectSection.append(projectCard)
+    $("#project-cards").append(projectCard)
 
     let imgArr = [$(`#${i}-img1`), $(`#${i}-img2`), $(`#${i}-img3`), $(`#${i}-img4`), $(`#${i}-img5`), $(`#${i}-final`)]
     revealEL(imgArr[0])

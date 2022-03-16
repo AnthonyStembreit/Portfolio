@@ -6,42 +6,27 @@
     --navlink-color: #b9c6ae;
   }
 body{
-    background-image: url(https://i.pinimg.com/originals/fb/a7/f4/fba7f4622335262f769a3287894c3249.jpg);
+    /* https://i.pinimg.com/originals/fb/a7/f4/fba7f4622335262f769a3287894c3249.jpg */
+    background-image: url(https://images.pexels.com/photos/33834/landscape-shore-sunset-clouds.jpg);
     background-attachment: fixed;
     background-size: cover;
+    background-position-y:-150px ;
     color:black;
     margin-bottom: 200px;
     font-family: 'Crimson Text', serif;
 }
-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* padding-left: 50px;
-    padding-right: 50px; */
-    margin-top: 170px;
-    width:100%;
-}
-i{
-    color: var(--text);
-    background-color:rgb(253 216 115 / 14%);
-    font-size:40px;
-    padding:5px;
-    text-align: center;
-}
 .hide{
     display: none !important;
 }
-/*navbar*/
-/* .navbar{
-    color: white !important;
-    display:inherit;
-    
-} */
+/*header & navigation*/
+header{
+    display:flex;
+    justify-content:space-between;
+    align-content: flex-start;
+}
 .navbar-center{
     text-align: center;
     width: 100%;
-    justify-content: space-around;
     height: 200px;
     font-size: 20px;
     /* background-color: var(--transparent); */
@@ -72,21 +57,34 @@ i{
     text-decoration: underline solid var(--text)!important;
     text-underline-offset: 5px;
 }
-aside{
+nav{
     display: flex;
     flex-direction: column;
     left:0;
     position: fixed;
-    top: 40px;
+    top: 0px;
     background-color: var(--solid);
-    border-radius: 10px;
-
+    /* border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px; */
+    height:100%;
+    width: 18%
 }
-/*header*/
-header{
-    display:flex;
-    justify-content:space-between;
-    align-content: flex-start;
+#nav-aside{
+    height:100%;
+    width: 20%
+}
+
+
+/*photo of me*/
+#profile{
+    position: relative;
+    text-align: center;
+}
+#profile-pic{
+    height: 250px;
+    border-radius: 900px;
+    margin: 5px;
+    padding: 5px;
 }
 #name{
     padding:5px;
@@ -104,34 +102,27 @@ header{
     bottom: 5px;
     left: 0px
 }
-/*carousel fade of descriptive words*/
-#inovative{
-    width:40%;
-    height: 52px;
-    border-radius: 20px;
-    background-color: rgb(253 216 115 / 14%);
+
+/*page sections*/
+section{
+    margin-top: 50px;
+    width:100%;
 }
-.words{
-    font-family: 'Martel', serif;
-    text-align: center;
-    padding:2px;
-    margin:0px;
-    color:var(--text);
-    font-size:32px;
-    font-weight: 700;
+.inner-section{
+    width: 80%;
+    margin-left:10%;
+    margin-right: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.text{
+    padding: 20px;
+    font-size: 22px;
+    background-color: var(--transparent);
+    border-radius: 10px;
 }
 
-/*photo of me*/
-#profile{
-    position: relative;
-    text-align: center;
-}
-#profile-pic{
-    height: 250px;
-    border-radius: 900px;
-    margin: 5px;
-    padding: 5px;
-}
 /*page titles*/
 h1{
     color:var(--text);
@@ -140,6 +131,7 @@ h1{
     border-bottom-width: 5px;
     text-align: center;
     border-radius: 15px;
+ 
 }
 .fancy{
     background-color: rgb(253 216 115 / 14%);
@@ -148,14 +140,13 @@ h1{
     padding-bottom: 10px;
     padding-left: 20px;
     padding-right: 20px;
-    /* margin-bottom: 45px; */
     border-radius: 10px;
+    text-align: center;
 }
 .super-fancy{
     width:100%;
     display: flex;
     justify-content: center;
-    flex-direction: row;
     align-items: center;
     padding-top:40px;
     padding-bottom:40px;
@@ -164,34 +155,11 @@ h1{
 }
 
 
-/*bio*/
-.prof{
-    height: 400px;
-    width: 400px;
-    border-radius: 280px;
-    justify-content:center;
-}
-#image{
-    display: flex;
-    justify-content: center;
-}
-.text{
-    padding: 20px;
-    font-size: 22px;
-    background-color: var(--transparent);
-    border-radius: 10px;
-}
+/*about*/
 .inner-text{
     background-color: rgb(253 216 115 / 24%);
     padding: 15px;
     border-radius: 20px;
-    margin-top: 30px;
-}
-#tech{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap:wrap;
-    width: 80%;
 }
 .tech-card{
     padding:0px;
@@ -203,61 +171,98 @@ h1{
 
 
 /*contact*/
+
+/*form*/
+#contact-form{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    margin:10px;
+    padding: 20px;
+    height:500px;
+    width:50%;
+    background-color: var(--solid);
+    border-radius: 8px;
+}
+textarea{
+    height: 200px;
+}
+/*links*/
 #links{
-    padding:40px; 
-    height: 600px;
-    width: 600px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    border-radius: 900px;
+    align-items: center;
+    height: 300px;
 }
-#gh{
-    width: 100%; 
-    justify-content: flex-start;
-}
-#li{
+aside img{
     width: 100%;
-    justify-content: flex-end;
-    
 }
-#em{
-    align-self: flex-end;
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin:5px;
+    height: 100%;
 }
-#em i {
-    font-size: 70px;
+.article-item{
+    height: 30px;
+    margin:0px;
+    margin-top:5px;
+    margin-bottom:5px;
+    padding:0px;
+    display: flex;
+    align-items: center;
 }
-#res{
-    align-self: flex-end;
+i{
+    color: var(--text);
+    background-color:rgb(253 216 115 / 14%);
+    font-size:40px;
+    padding:5px;
+    text-align: center;
 }
-#res i{
-    padding: 5px;
+#links i{
+    font-size: 35px;
+    /* border-radius: 8px; */
+    background-color: unset;
+}
+#links i:hover{
+    color: rgba(253, 216, 115, 0.767);
+    /*background-color: var(--text); */
 }
 a{
     color:black;
 }
 a:hover {
     text-decoration: none;
-}
-.contact{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.contact i{
-    font-size: 75px;
-    border-radius: 8px;
-    padding-top: 0px;
-    padding-bottom:0px;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-.contact i:hover{
-    color: rgb(230 168 169);
+    color:black;
 }
 
-/*projects*/
+/*project cards*/
+.projectCard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    background-color:rgb(253 216 115 / 14%);
+    width: min-content;
+    margin: 15px;
+}
+.card-title{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    color: var(--text);
+    text-decoration: underline var(--text);
+    text-underline-offset: 5px;
+    padding: 5px;
+    border-radius: 2px;
+    width: 65%;
+    background-color: var(--transparent);
+}
+
+/*animation*/
 .reset{
     position: absolute;
     height: 0;
@@ -330,15 +335,15 @@ a:hover {
     width: 85%;
 }
 .img-container{
-    height:500px;
-    width: 800px;
+    height:312px;
+    width: 500px;
     position: relative;
 }
 .img-container img{
-    max-width: 800px;
+    max-width: 500px;
 }
 
-/*modal*/
+/*project modal*/
 #modal{
     top:0;
     left:0;
@@ -415,6 +420,24 @@ a:hover {
 #modal-desc-sect{
     width:50%
 }
+
+/*carousel fade of descriptive words*/
+#inovative{
+    width:40%;
+    height: 52px;
+    border-radius: 20px;
+    background-color: rgb(253 216 115 / 14%);
+}
+.words{
+    font-family: 'Martel', serif;
+    text-align: center;
+    padding:2px;
+    margin:0px;
+    color:var(--text);
+    font-size:32px;
+    font-weight: 700;
+}
+
 /*footer*/
 footer i {
     background-color: unset;
@@ -442,13 +465,6 @@ footer{
     .navbar{
         width: 100%;
     }
-    #name{
-        font-size: xx-large;
-    }
-    #market{
-        font-size:25px;
-        padding:5px;
-    }
     .navbar-toggler{
         background-color:  var(--text);
     }
@@ -461,41 +477,17 @@ footer{
         padding:15px;
         color: var(--text)
     }
+
+
     body{
         margin-bottom: unset;
     }
-    h1{
-        text-align: center;
-    }
-    .contact{
-        margin:5px;
-    }
-    .back{
-        font-size: 16px;
-        padding:0px;
-    }
-    .back i{
-        font-size: 22px;
-    }
-   .bio{
-       text-align:center;
-   }
-  
-   .prof{
-       height:300px;
-       width:300px;
-   }
    .bottom{
        width:20%;
    }
    footer{
        position:static;
    }
-  #email{
-      padding:22px;
-      max-width:100%;
-      margin:0px;
-  }
   .mobileFoot{
       max-width:100%;
       margin:0px;

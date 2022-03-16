@@ -62,24 +62,27 @@
     </nav>
   </header> -->
 
-  <aside>
-    <div id="profile">
-      <img id="profile-pic" src="./images/received_636634633666593_7.jpeg" />
-      <p id="name">Anthony StemBreit</p>
-    </div>
+  <!-- <aside id="nav-aside">
+    <nav>
+      <div id="profile">
+        <img id="profile-pic" src="./images/received_636634633666593_7.jpeg" />
+        <p id="name">Anthony StemBreit</p>
+      </div>
 
-    <ul class="navbar-nav navbar-center">
-      <li class="nav-item">
-        <a class="nav-link" id="about-nav" href="#">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="contact-nav" href="#">Contact</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="project-nav" href="#">Projects</a>
-      </li>
-    </ul>
-  </aside>
+      <ul class="navbar-nav navbar-center">
+        <li class="nav-item">
+          <a class="nav-link" id="about-nav" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="contact-nav" href="#">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="project-nav" href="#">Projects</a>
+        </li>
+      </ul>
+    </nav>
+  </aside> -->
+
   <section id="bio">
     <div class="super-fancy">
       <div class="fancy">
@@ -87,7 +90,7 @@
       </div>
     </div>
 
-    <div class="text" id="tech">
+    <div class="text inner-section" id="tech">
       <p class="inner-text">
         After graduating, I was inspired to help others going through the bootcamp and have worked as a teaching
         assistant and tutor for the past year.
@@ -122,34 +125,44 @@
       </div>
     </div>
 
-    <div id="links" class="text">
+    <div class="inner-section">
 
-      <a class="contact" id="gh" target="_blank" href="https://github.com/AnthonyStembreit">
-        <i class="fab fa-github-square"></i>
 
-        <p>Github</p>
-      </a>
+      <form id="contact-form" type="submit">
+        <input id="contact-name" placeholder="name" />
+        <input id="contact-email" placeholder="email" />
+        <textarea id="contact-message" placeholder="message"></textarea>
+        <button type="submit">Submit</button>
+      </form>
 
-      <a class="contact" id="res" target="_blank" href="./Updated-Resume.pdf">
-        <i class="fas fa-file-pdf"></i>
+      <aside id="links" class="text">
+        <!-- <img src="" alt="soemthing fun" /> -->
+        <article>
+          <i class="fab fa-github-square article-item"></i>
+          <i class=" fas fa-envelope article-item"></i>
+          <i class="fab fa-phone article-item"></i>
+          <i class=" fab fa-linkedin article-item"></i>
+          <i class="fas fa-file-pdf article-item"></i>
+        </article>
 
-        <p>Resume</p>
-      </a>
-
-      <a class="contact" id="em" href="mailto:stembreit@gmail.com">
-        <i class="fas fa-envelope"></i>
-
-        <p>Email</p>
-      </a>
-
-      <a class="contact" id="li" target="_blank" href="https://www.linkedin.com/in/anthony-stembreit">
-        <i class="fab fa-linkedin"></i>
-
-        <p>LinkedIn</p>
-      </a>
+        <article>
+          <a class="article-item"  target="_blank" href="https://github.com/AnthonyStembreit">
+            Github: AnthonyStembreit
+          </a>
+          <a class="article-item" href="mailto:stembreit@gmail.com">
+            Email: stembreit@gmail.com
+          </a>
+          <p class="article-item"> Phone: 816-405-1276</p>
+          <a class="article-item" target="_blank" href="https://www.linkedin.com/in/anthony-stembreit">
+            LinkedIn: anthony-stembreit
+          </a>
+          <a class="article-item" target="_blank" href="./Updated-Resume.pdf">
+            Resume
+          </a>
+        </article>
+      </aside>
 
     </div>
-
   </section>
 
   <section id="projects">
@@ -157,6 +170,9 @@
       <div class="fancy">
         <h1>Projects</h1>
       </div>
+    </div>
+    <div class="inner-section" id="project-cards">
+
     </div>
   </section>
 
@@ -194,6 +210,8 @@
       </div>
     </div>
   </div>
+
+
   <!--social media links-->
   <footer id="icons" class="mobileFoot">
 
