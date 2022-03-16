@@ -1,16 +1,17 @@
 :root {
     /* declare a variable with `--` syntax */
-    --transparent: rgb(201 56 56 / 56%);
-    --solid: rgba(165, 42, 42, 0.966);
+    /* --transparent: rgb(201 56 56 / 56%);
+    --solid: rgba(165, 42, 42, 0.966); */
     --text: rgb(240, 240, 240);
     --navlink-color: #b9c6ae;
   }
 body{
     /* https://i.pinimg.com/originals/fb/a7/f4/fba7f4622335262f769a3287894c3249.jpg */
-    background-image: url(https://images.pexels.com/photos/33834/landscape-shore-sunset-clouds.jpg);
+ /*awesome-sunset-red-orange-cumulus-clouds-are-towering-in-this-dramatic-evening-sky-ulrich-wende.jpeg*/
+    background-image: url(./finalcut.jpg);
     background-attachment: fixed;
     background-size: cover;
-    background-position-y:-150px ;
+    /* background-position-y:-250px ; */
     color:black;
     margin-bottom: 200px;
     font-family: 'Crimson Text', serif;
@@ -18,6 +19,7 @@ body{
 .hide{
     display: none !important;
 }
+
 /*header & navigation*/
 header{
     display:flex;
@@ -40,7 +42,7 @@ header{
 .nav-link{
     /* border-radius: 5px; */
     font-weight:700;
-    background-color: rgb(253 216 115 / 14%);
+    /* background-color: rgb(253 216 115 / 14%); */
     /* border: solid 4px var(--solid); */
     color: var(--text);
     text-decoration: underline var(--text);
@@ -73,7 +75,6 @@ nav{
     height:100%;
     width: 20%
 }
-
 
 /*photo of me*/
 #profile{
@@ -134,7 +135,7 @@ h1{
  
 }
 .fancy{
-    background-color: rgb(253 216 115 / 14%);
+    /* background-color: rgb(253 216 115 / 14%); */
     width: 45%;
     height: fit-content;
     padding-bottom: 10px;
@@ -154,10 +155,9 @@ h1{
     margin-bottom: 30px;
 }
 
-
 /*about*/
 .inner-text{
-    background-color: rgb(253 216 115 / 24%);
+    /* background-color: rgb(253 216 115 / 24%); */
     padding: 15px;
     border-radius: 20px;
 }
@@ -169,10 +169,7 @@ h1{
     text-align: center;
 }
 
-
 /*contact*/
-
-/*form*/
 #contact-form{
     display:flex;
     flex-wrap: wrap;
@@ -188,7 +185,7 @@ h1{
 textarea{
     height: 200px;
 }
-/*links*/
+
 #links{
     display: flex;
     flex-wrap: wrap;
@@ -217,7 +214,7 @@ article{
 }
 i{
     color: var(--text);
-    background-color:rgb(253 216 115 / 14%);
+    /* background-color:rgb(253 216 115 / 14%); */
     font-size:40px;
     padding:5px;
     text-align: center;
@@ -245,7 +242,7 @@ a:hover {
     flex-wrap: wrap;
     justify-content: center;
     padding: 10px;
-    background-color:rgb(253 216 115 / 14%);
+    /* background-color:rgb(253 216 115 / 14%); */
     width: min-content;
     margin: 15px;
 }
@@ -426,7 +423,7 @@ a:hover {
     width:40%;
     height: 52px;
     border-radius: 20px;
-    background-color: rgb(253 216 115 / 14%);
+    /* background-color: rgb(253 216 115 / 14%); */
 }
 .words{
     font-family: 'Martel', serif;
@@ -453,7 +450,6 @@ footer{
         padding-bottom: 5px;
         display: flex;
         justify-content: space-around;
-
 }
 #icons{
     margin-top: 0px;
