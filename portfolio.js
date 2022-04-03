@@ -73,11 +73,6 @@ $(document).ready(function () {
     let ProjectFour = new Card("#openProjectFour", "#closeProjectFour", "#ProjectFourDescription", "#ProjectFour-body", "#ProjectFour-carousel")
     projectChanges(ProjectFour)
 
-    let ProjectFive = new Card("#openProjectFive", "#closeProjectFive", "#ProjectFiveDescription", "#ProjectFive-body", "#ProjectFive-carousel")
-    projectChanges(ProjectFive)
-
-    let ProjectSix = new Card("#openProjectSix", "#closeProjectSix", "#ProjectSixDescription", "#ProjectSix-body", "#ProjectSix-carousel")
-    projectChanges(ProjectSix)
 
     //media queries to change html for mobile mode
     var media1000 = window.matchMedia("(max-width: 1000px)")
