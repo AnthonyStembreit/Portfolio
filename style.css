@@ -210,6 +210,9 @@ footer{
 }
 
 @media screen and (max-width: 1000px){
+    #inovative{
+        display: none;
+    }
     .navbar{
         width: 100%;
     }
