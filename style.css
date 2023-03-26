@@ -91,6 +91,10 @@ h1{
     font-size: 22px;
     background-color: rgb(204, 204, 204);
     border-radius: 10px;
+    height: fit-content;
+    padding-bottom: 15px;
+    margin:5px
+
 }
 .blurb{
     background-color: rgb(144 142 142);
@@ -101,6 +105,10 @@ h1{
 .family{
     max-height:600px;
     max-width:400px;
+}
+#grad{
+    font-size:20px;
+    padding-left:25px;
 }
 /*contact*/
 #email{
