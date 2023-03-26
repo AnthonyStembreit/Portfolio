@@ -82,6 +82,12 @@ h1{
     background-color: rgb(204, 204, 204);
     border-radius: 10px;
 }
+.blurb{
+    background-color: rgb(144 142 142);
+    padding:25px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
 /*contact*/
 #email{
     padding:15px; 
