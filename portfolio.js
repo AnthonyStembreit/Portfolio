@@ -12,11 +12,11 @@ $(document).ready(function () {
         $(".tech").css("height", cardHeight)
     }
     $("body").mouseenter(function () {
-        $(".carousel").carousel('pause')
+        $(".project-carousel").carousel('pause')
         carouselSetUp()
     })
-    $("#contact").mouseenter(function () {
-        $(".carousel").carousel('pause')
+    $("#projects").mouseenter(function () {
+        $(".project-carousel").carousel('pause')
         carouselSetUp()
     })
 
