@@ -1,0 +1,35 @@
+.subpage-header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+}
+
+.subpage-prof {
+    height: 255px;
+    width: 255px;
+    border-radius: 280px;
+    margin-left: 60px;
+    margin-right: 40px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.subpage-name {
+    border-radius: 25px;
+    align-self: flex-start;
+    padding-top: 50px !important;
+    text-decoration: underline;
+    text-underline-position: from-font;
+    text-decoration-thickness: from-font;
+}
+
+#subpage-nav {
+    margin-top: 0px;
+
+}
+
+body {
+    background-position-y: -120px;
+}
+
