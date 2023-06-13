@@ -32,4 +32,11 @@
 body {
     background-position-y: -120px;
 }
-
+@media screen and (max-width: 1000px){
+    .navbar-nav{
+        flex-direction: column;
+        width:100%;
+        position: absolute;
+        z-index: 15;
+    }
+}
