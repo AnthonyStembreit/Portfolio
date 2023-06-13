@@ -26,7 +26,6 @@
 
 #subpage-nav {
     margin-top: 0px;
-
 }
 
 body {
@@ -38,5 +37,9 @@ body {
         width:100%;
         position: absolute;
         z-index: 15;
+    }
+    #paragraphTwo{
+        width: 100%;
+        flex-basis: unset;
     }
 }
